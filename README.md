@@ -10,8 +10,6 @@ A large feedback-collection web application that profiles the advanced features 
 <b>I WANT</b> feedback from users.  
 <b>SO THAT</b> I can make app/service better.
 
----
-
 | User Flow Walkthrough                                | Tech                                    |
 | ---------------------------------------------------- | --------------------------------------- |
 | User signs up via Google OAuth                       | Express Server<br>PassportJS<br>MongoDB |
@@ -22,3 +20,21 @@ A large feedback-collection web application that profiles the advanced features 
 | Surveyees click on link in email to provide feedback | Email Provider<br>Express<br>MongoDB    |
 | App tabulates feedback                               | MongoDB                                 |
 | User can see report of all survey responses          | React<br>Redux<br>MongoDB               |
+
+## Server Side Architecture
+
+## Authentication with Google OAuth
+
+## MongoDB
+
+## Dev vs. Prod Enviroments
+
+## Client Side
+
+## Handling Payments
+
+## Routing
+
+## Mongoose
+
+## Webhooks
