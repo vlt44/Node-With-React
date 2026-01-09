@@ -21,9 +21,18 @@ A large feedback-collection web application that profiles the advanced features 
 | App tabulates feedback                               | MongoDB                                 |
 | User can see report of all survey responses          | React<br>Redux<br>MongoDB               |
 
-## Server Side Architecture
+## Wireframe
+
+<img src="./assets/Wireframe.png" alt="Wireframe" width="750" height="500">
+
+## Architecture
+
+Application
+<img src="./assets/ApplicationArchitecture.png" alt="Wireframe" width="600" height="500">
 
 ## Authentication with Google OAuth
+
+<img src="./assets/OAuthFlow.png" alt="OAuthFlow" width="1000" height="800">
 
 ## MongoDB
 
