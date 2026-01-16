@@ -30,3 +30,5 @@ require('./routes/billingRoutes')(app);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
+
+console.log(JSON.stringify({ NODE_ENV: process.env.NODE_ENV }));
