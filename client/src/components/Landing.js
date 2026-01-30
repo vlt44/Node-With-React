@@ -4,9 +4,8 @@ const Landing = () => {
     return (
         <div style={{textAlign: 'center'}}>
             <h1>
-                NODE-REACT
+                Dashboard
             </h1>
-            datadatadata
         </div>
     )
 }

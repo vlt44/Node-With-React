@@ -28,9 +28,10 @@ class Header extends Component {
         <nav>
             <div className="nav-wrapper">
                 <Link 
-                className="left brand-logo" 
-                to={this.props.auth ? '/surveys' : '/'}
-                > Logo 
+                    className="left brand-logo" 
+                    to={this.props.auth ? '/surveys' : '/'}
+                >
+                VLT44
                 </Link>
                 <ul className="right">
                     {this.renderLoginLogoutButton()}
