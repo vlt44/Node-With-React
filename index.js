@@ -1,3 +1,4 @@
+require('dotenv').config();
 const bodyParser = require('body-parser');
 const express = require('express');
 const cookieSession = require('cookie-session');
@@ -7,11 +8,7 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
 
-if (keys.mongoURI) {
-    mongoose.connect(keys.mongoURI);
-} else {
-    console.warn('MongoDB not configured. Skipping database connection.');
-}
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
@@ -30,5 +27,3 @@ require('./routes/billingRoutes')(app);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
-
-console.log(JSON.stringify({ NODE_ENV: process.env.NODE_ENV }));
