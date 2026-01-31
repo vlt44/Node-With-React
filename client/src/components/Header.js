@@ -24,6 +24,8 @@ class Header extends Component {
     }
 
     render() {
+        console.log("AUTH:", this.props.auth);
+
         return (
         <nav>
             <div className="nav-wrapper">
