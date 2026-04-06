@@ -65,6 +65,8 @@ It is designed to reflect real-world production patterns including separation of
 
 ## Architecture
 
+![System Design](./assets/system-design.png)
+
 ### Data Model
 
 User:
@@ -122,6 +124,8 @@ Webhooks:
 
 Authentication is handled using **Passport.js with Google OAuth**.
 
+![Auth Diagram](./assets/auth-diagram.png)
+
 Flow:
 
 1. User initiates login
@@ -136,26 +140,11 @@ Key Features:
 - Secure session handling
 - User serialization/deserialization
 
-### Form Handling
-
-Forms are built using **Redux Form**.
-
-Features:
-
-- Dynamic form fields
-- Reusable field components
-- Custom validation logic
-- Multi-step form flow
-
-Validation:
-
-- Email validation
-- Required fields
-- Error messaging UI
-
 ### Payments (Stripe)
 
 Users purchase credits to send surveys.
+
+![Stripe Diagram](./assets/stripe-diagram.png)
 
 Implementation:
 
@@ -172,17 +161,17 @@ Covered:
 
 ### Email System (SendGrid)
 
+Implementation:
+
+- Mailer class abstraction
+- HTML email generation
+- Personalized links per recipient
+
 Features:
 
 - Send survey emails to multiple recipients
 - Dynamic email templates
 - Click tracking for responses
-
-Implementation Details:
-
-- Mailer class abstraction
-- HTML email generation
-- Personalized links per recipient
 
 ### Survey System
 
@@ -192,7 +181,24 @@ Capabilities:
 - Send surveys to multiple recipients
 - Track responses (Yes / No)
 
-### Webhook Processing
+**Form Handling**
+
+Forms are built using **Redux Form**.
+
+Features:
+
+- Dynamic form fields
+- Reusable field components
+- Custom validation logic
+- Multi-step form flow
+
+Validation:
+
+- Email validation
+- Required fields
+- Error messaging UI
+
+**Webhook Processing**
 
 Handles asynchronous events from SendGrid when recipients interact with emails.
 
