@@ -4,6 +4,41 @@
 
 A large feedback-collection web application that profiles the advanced features of React, Redux, Express, and Mongo.
 
+This application demonstrates a complete full-stack architecture that integrates:
+
+- Secure user authentication (Google OAuth)
+- Payment processing (Stripe)
+- Email delivery and tracking (SendGrid)
+- Survey creation and response collection
+- Webhook-driven event processing
+
+It is designed to reflect real-world production patterns including separation of concerns, asynchronous workflows, and external service integration.
+
+## Tech Stack
+
+**Frontend**
+
+- React
+- Redux / Redux Thunk
+- React Router
+- Material UI
+
+**Backend**
+
+- Node.js
+- Express
+- MongoDB (Mongoose)
+
+**External Services**
+
+- Google OAuth (Passport.js)
+- Stripe API
+- SendGrid API + Webhooks
+
+**Deployment**
+
+- Heroku
+
 ## User Story
 
 <b>AS A</b> startup owner of an app/service.  
@@ -21,29 +56,8 @@ A large feedback-collection web application that profiles the advanced features 
 | App tabulates feedback                               | MongoDB                                 |
 | User can see report of all survey responses          | React<br>Redux<br>MongoDB               |
 
-## Wireframe
+**Wireframe**
 
 <img src="./assets/Wireframe.png" alt="Wireframe" width="750" height="500">
 
 ## Architecture
-
-Application
-<img src="./assets/ApplicationArchitecture.png" alt="Wireframe" width="600" height="500">
-
-## Authentication with Google OAuth
-
-<img src="./assets/OAuthFlow.png" alt="OAuthFlow" width="1000" height="800">
-
-## MongoDB
-
-## Dev vs. Prod Enviroments
-
-## Client Side
-
-## Handling Payments
-
-## Routing
-
-## Mongoose
-
-## Webhooks
